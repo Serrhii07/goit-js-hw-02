@@ -21,8 +21,9 @@ while (true) {
   numbers.push(input);
 }
 
-for (const number of numbers) {
-  total += number;
+if (numbers.length > 0) {
+  for (const number of numbers) {
+    total += number;
+  }
+  console.log(`Общая сумма чисел равна ${total}`);
 }
-
-console.log(`Общая сумма чисел равна ${total}`);

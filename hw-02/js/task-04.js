@@ -3,11 +3,8 @@ const formatString = function(string) {
     return string;
   }
 
-  let stringArray = string.split('');
-  stringArray.splice(40);
-  stringArray = stringArray.join('');
-
-  return `${stringArray}...`;
+  let cuttedString = string.slice(0, 40);
+  return `${cuttedString}...`;
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
